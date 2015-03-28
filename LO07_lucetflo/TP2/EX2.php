@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title> TP 2 : exercice 2 </title>
+		<meta name="auteur" content="Florent LUCET" />
+        <meta name="sujet" content="TP de LO07" />
+        <meta name="mots-cles" content="Programmation,Web,HTML,PHP" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="../styles/styleTP2EX2.css" type="text/css" media="screen" />
+		<!-- La feuille de styles "base.css" doit être appelée en premier. -->
+		<link rel="stylesheet" type="text/css" href="../styles/base.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="../styles/modeleGeneral.css" media="screen" />
+	</head>
+
+	<body>
+
+		<div id="global">
+
+			<?php include "../general/entete.html"; ?>
+
+			<div id="centre">
+				<div id="navigation">
+					<ul>
+						<li><p><a href="#formation">Formation</a></p></li>
+						<li><p><a href="#experience">Expérience</a></p></li>
+						<li><p><a href="#competences">Compétences informatiques, langues et qualifications</a></p></li>
+						<li><p><a href="#interetsQualites">Intérêts et qualités</a></p></li>
+					</ul>
+					<ul>
+						<li><p><a href="./plan.php">Accueil du TP</a></p></li>
+						<li><p><a href="./EX1.html">Exercice précédent</a></p></li>
+						<li><p><a href="./EX3.php">Exercice suivant</a></p></li>
+					</ul>
+				</div><!-- #navigation -->
+
+				<div id="contenu">
+					<h2>Florent LUCET</h2>
+					<br/>
+					<p>Né le 26 octobre 1992 <br/>
+						10 rue Marie Curie, 10430 Rosières-près-Troyes, France</p>
+
+					<p><i>Numéro de téléphone :</i> +33 (0)3 25 71 03 63 <br/>
+						<i>Numéro de portable :</i> +33 (0)6 88 62 42 46 <br/>
+						<i>Adresse e-mail :</i> lucet.florent@gmail.com</p>
+
+					<p>Masculin <br/>
+						Célibataire <br/>
+						Français</p>
+					<br/>
+					<br/>
+					<hr/>
+
+					<h2 id="formation">Formation</h2>
+					<br/>
+					<ul><li>
+							<table>
+								<thead>
+									<tr>
+										<th>Année</th>
+										<th>Période</th>
+										<th>Diplôme</th>
+										<th>Branche/spécialité</th>
+										<th>Compétences obtenues/améliorées</th>
+										<th>Lieu</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2013</td>
+										<td rowspan="2">Septembre - juin</td>
+										<td rowspan="2">Préparation d'un Diplôme d'Ingénieur</td>
+										<td rowspan="2">Informatique et Systèmes d'Information</td>
+										<td rowspan="2">EG23 (interface homme-machine), GE21 (droit), IF02 (UML), LE02 (anglais), LI01 (écriture), LO07 (programmation Web, PHP), LO12 (intelligence artificielle, Prolog)</td>
+										<td rowspan="2">Université de Technologie de Troyes - Rosières-près-Troyes, Aube (10), France</td>
+									</tr>
+									<tr>
+										<td rowspan="2">2012</td>
+									</tr>
+									<tr>
+										<td>Juin</td>
+										<td>Diplôme Universitaire de Technologie</td>
+										<td>Informatique</td>
+										<td>Programmation (ASM, C, Java, Python, SQL, Visual Basic), Conception Web (CSS, HTML, PHP), Génie Logiciel (Merise, UML), Bureautique (Access), Système d'Exploitation (Linux, Shell)</td>
+										<td>Institut Universitaire de Technologie - Ifs, Calvados (14), France</td>
+									</tr>
+									<tr>
+										<td>2010</td>
+										<td>Juin</td>
+										<td>Baccalauréat</td>
+										<td>Scientifique (spécialité Mathématiques)</td>
+										<td>Sciences (Mathématiques, Physique, Chimie, SVT), Langues (Français, LV1 Anglais, LV2 Espagnol, LV3 Japonais, LM1 Grec), Histoire-Géographie, Philosophie</td>
+										<td>Lycée Charles de Gaulle - Caen, Calvados (14), France</td>
+									</tr>
+								</tbody>
+							</table>
+						</li></ul>
+					<br/>
+					<hr/>
+
+					<h2 id="experience">Expérience</h2>
+					<br/>
+					<ul>
+						<li><h3>Future / Entreprises ciblées</h3>
+							<ul>
+								<li><img src="../images/logos/nintendo.jpg" alt="Nintendo" class="logo" /> <a href="http://www.nintendo.fr/">Nintendo</a></li>
+								<li><img src="../images/logos/ubisoft.jpg" alt="Ubisoft" class="logo" /> <a href="http://www.ubi.com/FR/">Ubisoft</a></li>
+								<li><img src="../images/logos/cinematheque.gif" alt="Cinematheque" class="logo" /> <a href="http://www.cinematheque.fr/">Cinémathèque française</a></li>
+								<li><img src="../images/logos/magnum.png" alt="Magnum" class="logo" /> <a href="http://www.magnumphotos.com/">Magnum Photos</a></li>
+								<li><img src="../images/logos/arte.png" alt="Arte" class="logo" /> <a href="http://www.arte.tv/fr">Arte</a></li>
+							</ul>
+						</li>
+						<li><h3>Passée</h3>
+							<table>
+								<thead>
+									<tr>
+										<th>Année</th>
+										<th>Période</th>
+										<th>Type</th>
+										<th>Entreprise</th>
+										<th>Compétences améliorées</th>
+										<th>Description</th>
+										<th>Lieu</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td rowspan="2">2012</td>
+										<td>Avril - juin (11 semaines)</td>
+										<td>Stage</td>
+										<td>Areva</td>
+										<td>Access, Base de données, Excel, UML, Visual Basic</td>
+										<td>Développement de plusieurs outils logiciels pour le bureau d'études et des méthodes</td>
+										<td>Centrale nucléaire Flamanville 3 - Flamanville, La Manche (50), France</td>
+									</tr>
+									<tr>
+										<td rowspan="2">Avril - mars</td>
+										<td rowspan="2">Projet 1A2A</td>
+										<td rowspan="2">Auto-école du Péricentre</td>
+										<td rowspan="2">Base de données, Impression, iText, Java, Merise, ORM, Travail d'équipe, UML</td>
+										<td rowspan="2">Création d'un gestionnaire de livrets du suivi d'élèves</td>
+										<td rowspan="2">Institut Universitaire de Technologie - Ifs, Calvados (14), France</td>
+									</tr>
+									<tr>
+										<td>2011</td>
+									</tr>
+									<tr>
+										<td>2009</td>
+										<td rowspan="2">Septembre - juin</td>
+										<td rowspan="2">Travaux Personnels Encadrés</td>
+										<td rowspan="2">Lycée Charles de Gaulle</td>
+										<td rowspan="2">Concision, Connaissance des nanotechnologies, Recherche, Travail d'équipe</td>
+										<td rowspan="2">Rédaction d'un rapport sur le thème des nanotechnologies</td>
+										<td rowspan="2">Lycée Charles de Gaulle - Caen, Calvados (14), France</td>
+									</tr>
+									<tr>
+										<td>2008</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+					<br/>
+					<hr/>
+
+					<h2 id="competences">Compétences informatiques, langues et qualifications</h2>
+					<br/>
+					<ul>
+						<li><h3>Compétences informatiques</h3>
+							<ul>
+								<li><b>Programmation :</b> ASM, C, Java, Python, SQL, Visual Basic</li>
+								<li><b>Conception Web :</b> CSS, HTML, PHP</li>
+								<li><b>Génie logiciel :</b> Merise, UML</li>
+								<li><b>Bureautique :</b> Access, Excel, OpenOffice, Word</li>
+								<li><b>Système d'exploitation :</b> Windows, Linux (Ubuntu)</li>
+							</ul>
+						</li>
+						<li><h3>Langues</h3>
+							<table>
+								<thead>
+									<tr>
+										<th>Français</th>
+										<th>Anglais (LV1)</th>
+										<th>Espagnol (LV2)</th>
+										<th>Japonais (LV3)</th>
+										<th>Latin et Grec (LM1)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Langue maternelle</td>
+										<td>Connaissance avancée (8 ans)</td>
+										<td>De conversation (5 ans)</td>
+										<td>Basique (3 ans)</td>
+										<td>Basique (2 ans)</td>
+									</tr>
+									<tr>
+										<td>Lu +++, écrit +++, parlé +++</td>
+										<td>Lu +++, écrit ++, parlé ++</td>
+										<td>Lu ++, écrit +, parlé +</td>
+										<td>Lu ++, écrit ++, parlé +</td>
+										<td>Lu ++, écrit +</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li><h3>Qualifications</h3>
+							<ul>
+								<li><b>Conduite</b> <br/> Permis de conduire B (véhicules légers) <br/> Obtenu en 2013 - Caen, Calvados (14), France</li>
+								<li><b>Secourisme</b> <br/> Attestation de Formation aux Premiers Secours <br/> Obtenu en 2006 - Caen, Calvados (14), France</li>
+							</ul>
+						</li>
+					</ul>
+					<br/>
+					<hr/>
+
+					<h2 id="interetsQualites">Intérêts et qualités</h2>
+					<br/>
+					<ul>
+						<li><h3>Intérêts</h3>
+							<ul>
+								<li><b>Passions :</b> Jeu vidéo (Fumito Ueda, Tetsuya Mizuguchi), Cinéma (expressionnisme allemand des années vingt : Fritz Lang, Friedrich Wilhelm Murnau), Philosophie</li>
+								<li><b>Loisirs :</b> Voyages (Grande-Bretagne, Espagne, Allemagne, Italie, Pays-Bas, Belgique, Danemark, Croatie), Échecs (en club : 3 ans)</li>
+								<li><b>Sports (en club) :</b> Tennis (5 ans), Karate (3 ans), Judo (2 ans)</li>
+							</ul>
+						</li>
+						<li><h3>Qualités favorisant le…</h3>
+							<ul>
+								<li><b>Savoir :</b> Travailleur, curieux</li>
+								<li><b>Savoir-faire :</b> Perfectionniste, rigoureux, minutieux</li>
+								<li><b>Savoir-être :</b> Ouvert, enthousiaste, coopératif (travail en équipe)</li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- #contenu -->
+			</div><!-- #centre -->
+
+			<?php include "../general/pied.html"; ?>
+
+		</div><!-- #global -->
+
+	</body>
+</html>

@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+}
+
+body { 
+    background-color: #FFFFCC; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background: url(../images/fonds/fondCiel.png) no-repeat center fixed; 
+    -webkit-background-size: cover; /* Pour Chrome et Safari. */
+    -moz-background-size: cover; /* Pour Firefox. */
+    -o-background-size: cover; /* Pour Opera. */
+    background-size: cover; /* Version standardisée. */
+    
+    color: #000000;
+    
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px; 
+    font-style: normal; 
+    font-weight: normal;
+    font-variant: normal;
+    
+    height: 100%;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    
+    text-transform: none;
+    text-decoration: none;
+}
+
+#page-table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#page-td {
+    height: 100%;
+    padding: 0;
+    vertical-align: middle;
+}
+
+div#global {
+    width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+div.coin {
+    background-color: #E4EFFF;
+    border: 1px solid #9FC6FF;
+    padding: 16px;
+    -moz-border-radius: 10px 0;
+    -webkit-border-radius: 10px 0;
+    border-radius: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 420px;
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+.relations {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 0;
+    background: #CDE3F7;
+    border: 1px solid #4B8CCD;
+    padding-bottom: 1px;
+    width: 400px;
+}
+
+.relations ul {
+    list-style-type:none;
+}
+
+.relations a, .relations span {
+    display: block;
+    padding: 4px 10px;
+    color: #FFF;
+    text-decoration: none;
+    background: #1F61A2;
+    padding: 8px;
+    padding-left: 20px;
+    text-align: left;
+    font: normal 13px Verdana;
+}
+
+.relations .relation a:hover, .relations .relation a:focus, .relations .relation a:active {
+    background: #4B8CCD;
+    border: 1px solid #97C8F7;
+}
+
+.relations .sousMenuRelation a:hover, .relations .sousMenuRelation a:focus, .relations .sousMenuRelation a:active {
+    text-decoration: underline;
+    background: none;
+    border: none;
+}
+
+.relations .sousMenuRelation {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #666;
+}
+
+.relations ul.sousMenuRelation a {
+    background: none;
+    color: #000000;
+    font: normal 12px Arial;
+    padding-left: 36px;
+}

@@ -1,0 +1,255 @@
+DROP DATABASE IF EXISTS MLR2;
+
+CREATE DATABASE IF NOT EXISTS MLR2;
+USE MLR2;
+# -----------------------------------------------------------------------------
+#       TABLE : TYPE_VISIBILITE
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS TYPE_VISIBILITE
+ (
+   IDTYPEVISIBILITE CHAR(32) NOT NULL  ,
+   NOMTYPEVISIBILITE CHAR(32) NULL  
+   , PRIMARY KEY (IDTYPEVISIBILITE) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       TABLE : PHOTO
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS PHOTO
+ (
+   IDPHOTO CHAR(32) NOT NULL  ,
+   IDCOMPTE CHAR(32) NOT NULL  ,
+   LIEN CHAR(32) NULL  
+   , PRIMARY KEY (IDPHOTO) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       INDEX DE LA TABLE PHOTO
+# -----------------------------------------------------------------------------
+
+
+CREATE  INDEX I_FK_PHOTO_COMPTE
+     ON PHOTO (IDCOMPTE ASC);
+
+# -----------------------------------------------------------------------------
+#       TABLE : COMPETENCE
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS COMPETENCE
+ (
+   IDCOMPETENCE CHAR(32) NOT NULL  ,
+   IDCOMPTE CHAR(32) NOT NULL  ,
+   NOMCOMPETENCE CHAR(32) NULL  
+   , PRIMARY KEY (IDCOMPETENCE) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       INDEX DE LA TABLE COMPETENCE
+# -----------------------------------------------------------------------------
+
+
+CREATE  INDEX I_FK_COMPETENCE_COMPTE
+     ON COMPETENCE (IDCOMPTE ASC);
+
+# -----------------------------------------------------------------------------
+#       TABLE : EVENEMENT
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS EVENEMENT
+ (
+   IDEVENEMENT CHAR(32) NOT NULL  ,
+   IDCOMPTE CHAR(32) NOT NULL  ,
+   IDTYPEEVENEMENT_COMPRENDRE CHAR(32) NOT NULL  ,
+   IDTYPEEVENEMENT CHAR(32) NULL  ,
+   DESCRIPTIONEVENEMENT CHAR(32) NULL  ,
+   DATEEVENEMENT CHAR(32) NULL  ,
+   HEUREEVENEMENT CHAR(32) NULL  
+   , PRIMARY KEY (IDEVENEMENT) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       INDEX DE LA TABLE EVENEMENT
+# -----------------------------------------------------------------------------
+
+
+CREATE  INDEX I_FK_EVENEMENT_COMPTE
+     ON EVENEMENT (IDCOMPTE ASC);
+
+CREATE  INDEX I_FK_EVENEMENT_TYPE_EVENEMENT
+     ON EVENEMENT (IDTYPEEVENEMENT_COMPRENDRE ASC);
+
+# -----------------------------------------------------------------------------
+#       TABLE : TYPE_EVENEMENT
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS TYPE_EVENEMENT
+ (
+   IDTYPEEVENEMENT CHAR(32) NOT NULL  ,
+   NOMTYPEEVENEMENT CHAR(32) NULL  
+   , PRIMARY KEY (IDTYPEEVENEMENT) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       TABLE : VISIBILITE
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS VISIBILITE
+ (
+   IDCOMPTE CHAR(32) NOT NULL  ,
+   IDVISIBILITEPROGRAMME CHAR(32) NOT NULL  ,
+   IDVISIBILITESEMESTRE CHAR(32) NOT NULL  ,
+   IDVISIBILITECOMPETENCES CHAR(32) NOT NULL  ,
+   IDVISIBILITEPHOTOS CHAR(32) NOT NULL  ,
+   IDCOMPTE_RENDRE_POSSIBLE CHAR(32) NOT NULL  
+   , PRIMARY KEY (IDCOMPTE,IDVISIBILITEPROGRAMME,IDVISIBILITESEMESTRE,IDVISIBILITECOMPETENCES,IDVISIBILITEPHOTOS) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       INDEX DE LA TABLE VISIBILITE
+# -----------------------------------------------------------------------------
+
+
+CREATE  INDEX I_FK_VISIBILITE_COMPTE
+     ON VISIBILITE (IDCOMPTE_RENDRE_POSSIBLE ASC);
+
+# -----------------------------------------------------------------------------
+#       TABLE : COMPTE
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS COMPTE
+ (
+   IDCOMPTE CHAR(32) NOT NULL  ,
+   IDENTIFIANT CHAR(32) NULL  ,
+   MOTDEPASSE CHAR(32) NULL  ,
+   PRENOM CHAR(32) NULL  ,
+   NOM CHAR(32) NULL  ,
+   SEXE CHAR(32) NULL  ,
+   PROGRAMME CHAR(32) NULL  ,
+   SEMESTRE CHAR(32) NULL  
+   , PRIMARY KEY (IDCOMPTE) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       TABLE : TYPE_RELATION
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS TYPE_RELATION
+ (
+   IDTYPERELATION CHAR(32) NOT NULL  ,
+   NOMTYPERELATION CHAR(32) NULL  
+   , PRIMARY KEY (IDTYPERELATION) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       TABLE : RELATION
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS RELATION
+ (
+   IDCOMPTESOURCE CHAR(32) NOT NULL  ,
+   IDCOMPTEDESTINATAIRE CHAR(32) NOT NULL  ,
+   IDTYPERELATION_CONTENIR CHAR(32) NOT NULL  ,
+   IDCOMPTE CHAR(32) NOT NULL  ,
+   IDTYPERELATION CHAR(32) NULL  
+   , PRIMARY KEY (IDCOMPTESOURCE,IDCOMPTEDESTINATAIRE) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       INDEX DE LA TABLE RELATION
+# -----------------------------------------------------------------------------
+
+
+CREATE  INDEX I_FK_RELATION_TYPE_RELATION
+     ON RELATION (IDTYPERELATION_CONTENIR ASC);
+
+CREATE  INDEX I_FK_RELATION_COMPTE
+     ON RELATION (IDCOMPTE ASC);
+
+# -----------------------------------------------------------------------------
+#       TABLE : INCLURE
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS INCLURE
+ (
+   IDCOMPTE CHAR(32) NOT NULL  ,
+   IDVISIBILITEPROGRAMME CHAR(32) NOT NULL  ,
+   IDVISIBILITESEMESTRE CHAR(32) NOT NULL  ,
+   IDVISIBILITECOMPETENCES CHAR(32) NOT NULL  ,
+   IDVISIBILITEPHOTOS CHAR(32) NOT NULL  ,
+   IDTYPEVISIBILITE CHAR(32) NOT NULL  
+   , PRIMARY KEY (IDCOMPTE,IDVISIBILITEPROGRAMME,IDVISIBILITESEMESTRE,IDVISIBILITECOMPETENCES,IDVISIBILITEPHOTOS,IDTYPEVISIBILITE) 
+ ) 
+ comment = "";
+
+# -----------------------------------------------------------------------------
+#       INDEX DE LA TABLE INCLURE
+# -----------------------------------------------------------------------------
+
+
+CREATE  INDEX I_FK_INCLURE_VISIBILITE
+     ON INCLURE (IDCOMPTE ASC,IDVISIBILITEPROGRAMME ASC,IDVISIBILITESEMESTRE ASC,IDVISIBILITECOMPETENCES ASC,IDVISIBILITEPHOTOS ASC);
+
+CREATE  INDEX I_FK_INCLURE_TYPE_VISIBILITE
+     ON INCLURE (IDTYPEVISIBILITE ASC);
+
+
+# -----------------------------------------------------------------------------
+#       CREATION DES REFERENCES DE TABLE
+# -----------------------------------------------------------------------------
+
+
+ALTER TABLE PHOTO 
+  ADD FOREIGN KEY FK_PHOTO_COMPTE (IDCOMPTE)
+      REFERENCES COMPTE (IDCOMPTE) ;
+
+
+ALTER TABLE COMPETENCE 
+  ADD FOREIGN KEY FK_COMPETENCE_COMPTE (IDCOMPTE)
+      REFERENCES COMPTE (IDCOMPTE) ;
+
+
+ALTER TABLE EVENEMENT 
+  ADD FOREIGN KEY FK_EVENEMENT_COMPTE (IDCOMPTE)
+      REFERENCES COMPTE (IDCOMPTE) ;
+
+
+ALTER TABLE EVENEMENT 
+  ADD FOREIGN KEY FK_EVENEMENT_TYPE_EVENEMENT (IDTYPEEVENEMENT_COMPRENDRE)
+      REFERENCES TYPE_EVENEMENT (IDTYPEEVENEMENT) ;
+
+
+ALTER TABLE VISIBILITE 
+  ADD FOREIGN KEY FK_VISIBILITE_COMPTE (IDCOMPTE_RENDRE_POSSIBLE)
+      REFERENCES COMPTE (IDCOMPTE) ;
+
+
+ALTER TABLE RELATION 
+  ADD FOREIGN KEY FK_RELATION_TYPE_RELATION (IDTYPERELATION_CONTENIR)
+      REFERENCES TYPE_RELATION (IDTYPERELATION) ;
+
+
+ALTER TABLE RELATION 
+  ADD FOREIGN KEY FK_RELATION_COMPTE (IDCOMPTE)
+      REFERENCES COMPTE (IDCOMPTE) ;
+
+
+ALTER TABLE INCLURE 
+  ADD FOREIGN KEY FK_INCLURE_VISIBILITE (IDCOMPTE,IDVISIBILITEPROGRAMME,IDVISIBILITESEMESTRE,IDVISIBILITECOMPETENCES,IDVISIBILITEPHOTOS)
+      REFERENCES VISIBILITE (IDCOMPTE,IDVISIBILITEPROGRAMME,IDVISIBILITESEMESTRE,IDVISIBILITECOMPETENCES,IDVISIBILITEPHOTOS) ;
+
+
+ALTER TABLE INCLURE 
+  ADD FOREIGN KEY FK_INCLURE_TYPE_VISIBILITE (IDTYPEVISIBILITE)
+      REFERENCES TYPE_VISIBILITE (IDTYPEVISIBILITE) ;
+

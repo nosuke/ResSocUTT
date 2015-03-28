@@ -1,0 +1,40 @@
+Cours :
+http://www.w3schools.com/
+http://www.siteduzero.com/informatique/tutoriels/apprenez-a-creer-votre-site-web-avec-html5-et-css3/memento-des-balises-html
+
+Site :
+http://blog.infiniclick.fr/articles/un-formulaire-avec-javascript-et-php.html
+http://www.developpez.net/forums/d1281566/webmasters-developpement-web/javascript/erreur-object-htmlinputelement/
+http://www.w3.org/Style/Examples/011/firstcss.fr.html
+http://www.mon-code.net/article/49/lire-et-ecrire-facilement-des-fichiers-csv-avec-la-spl-de-php5
+http://www.caputchino.com/stocker-un-formulaire-dans-un-fichier-csvexcell/
+
+Projet :
+http://css.4design.tl/les-10-plus-beaux-designs-css-selon-smashingcoding
+http://www.a-ton-site.com/gratuit/css/
+http://css.mammouthland.net/css3/coins-arrondis.php
+http://fvsch.com/code/centrer-bloc/
+http://www.infographizm.com/blog/un-site-qui-prend-toute-la-hauteur-disponible/
+http://www.enseignement.polytechnique.fr/informatique/INF441/INF441-WEB/Memos/Formulaires_CSS/
+http://www.blog-webdesign.com/bien-choisir-sa-palette-de-couleurs-pour-un-site-original/
+http://www.developpez.net/forums/d523516/bases-donnees/langage-sql/insert-into-p-jointure/
+http://www.siteduzero.com/forum/sujet/verifier-login-et-mdp-dans-bdd-34177
+http://www.goer.org/HTML/intermediate/align_and_indent/
+http://www.megaptery.com/2011/08/utilisez-des-boutons-css3-en-forme-de-bonbon.html
+http://www.commentcamarche.net/forum/affich-7450925-passage-de-variable-d-une-page-a-une-autre
+http://www.apprendre-php.com/tutoriels/tutoriel-12-traitement-des-formulaires-avec-get-et-post.html
+http://www.commentcamarche.net/forum/affich-1531776-session-start-et-header
+http://www.htaccesseditor.com/fr.shtml
+http://www.marevueweb.com/css-html/erreurs-courantes/
+http://www.siteduzero.com/informatique/tutoriels/concevez-votre-site-web-avec-php-et-mysql/proteger-un-dossier-avec-un-htaccess
+http://www.infowebmaster.fr/tutoriel/creer-page-erreur-404-personnalisee
+http://programmation-web.net/2010/11/comment-resoudre-les-problemes-daccents/
+http://www.commentcamarche.net/forum/affich-1531776-session-start-et-header
+http://www.htmlzengarden.com/2008/12/pre-remplir_les_champs_textes/
+http://www.journaldunet.com/developpeur/php/tutoriel-pratique/creer-une-galerie-photo-en-php/ajouter-des-photos.shtml
+http://webinfobazar.com/realiser-une-galerie-dimage-facile-avec-php-et-mysql/
+http://www.alsacreations.com/tuto/lire/602-Creer-un-menu-accordeon-avec-jQuery.html
+http://dzineblog.com/2008/10/30-animated-tab-interface-and-accordion-scripts.html
+http://www.menucool.com/vertical/accordion-menu-css
+http://www.siteduzero.com/informatique/tutoriels/upload-de-fichiers-par-formulaire
+http://sqlpro.developpez.com/cours/sqlaz/dml/

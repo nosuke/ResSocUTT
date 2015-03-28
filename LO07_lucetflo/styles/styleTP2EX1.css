@@ -1,0 +1,51 @@
+html { 
+	margin: 0;
+	padding: 0;
+	background: url(../images/fonds/f1.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover; /* Pour Chrome et Safari. */
+	-moz-background-size: cover; /* Pour Firefox. */
+	-o-background-size: cover; /* Pour Opera. */
+	background-size: cover; /* Version standardisée. */
+}
+
+h1 {
+	color: darkblue;
+	font-size: xx-large;
+	text-align: center;
+}
+
+h2 {
+	color: darkblue;
+	font-size: x-large;
+	text-align: center;
+}
+
+h3 {
+	color: darkred;
+	font-size: large;
+}
+
+.nom {
+	color: darkblue;
+	font-size: x-large;
+}
+
+ul li {
+	color: black;
+}
+
+
+/* h1 {
+	color: blue;
+	font-size: large;
+}
+
+h2 {
+	color: orange;
+	font-size: medium;
+}
+
+h3 {
+	color: red;
+	font-size: small;
+} */

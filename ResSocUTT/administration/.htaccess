@@ -1,0 +1,4 @@
+AuthName "Page administrateur"
+AuthType Basic
+AuthUserFile "C:\Program Files (x86)\wamp\www\ResSocUTT\administration\.htpasswd"
+Require valid-user

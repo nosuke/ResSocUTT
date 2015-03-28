@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+}
+
+body { 
+    background-color: #FFFFCC; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background: url(../images/fonds/fondCiel.png) no-repeat center fixed; 
+    -webkit-background-size: cover; /* Pour Chrome et Safari. */
+    -moz-background-size: cover; /* Pour Firefox. */
+    -o-background-size: cover; /* Pour Opera. */
+    background-size: cover; /* Version standardisée. */
+    
+    color: #000000;
+    
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px; 
+    font-style: normal; 
+    font-weight: normal;
+    font-variant: normal;
+    
+    height: 100%;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    
+    text-transform: none;
+    text-decoration: none;
+}
+
+#entete, #gauche, #droite, #pied {
+    padding: 1px 0;
+}
+
+#entete {
+    background-color: #1F61A2;
+    /*text-align: center;*/
+    
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#eGauche  {
+    float: left;
+    padding-left: 238px;
+}
+
+#contenu {
+    max-width: 960px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#cGauche  {
+    float: left;
+    width: 450px;
+}
+
+#cDroite {
+    margin-left: 540px;
+}
+
+#pied {
+    background-color: #E4EFFF;
+    padding-left: 260px;
+    clear: both;
+    
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.coin {
+    background-color: #E4EFFF;
+    border: 1px solid #9FC6FF;
+    padding: 16px;
+    -moz-border-radius: 10px 0;
+    -webkit-border-radius: 10px 0;
+    border-radius: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 420px;
+}
+
+#droite {
+    padding: 16px
+}
+
+label{
+	font-weight:bold;
+}
+
+#tab { margin-left: 40px; }

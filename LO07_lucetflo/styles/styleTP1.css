@@ -1,0 +1,9 @@
+html { 
+	margin: 0;
+	padding: 0;
+	background: url(../images/fonds/f1.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover; /* Pour Chrome et Safari. */
+	-moz-background-size: cover; /* Pour Firefox. */
+	-o-background-size: cover; /* Pour Opera. */
+	background-size: cover; /* Version standardisée. */
+}
